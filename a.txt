@@ -237,3 +237,12 @@ $ ^C
 
 GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (main)
 $
+
+
+git config --global user.name "scb"
+
+git config --global user.email "scb6124@gmail.com"
+git init 
+
+
+hi
