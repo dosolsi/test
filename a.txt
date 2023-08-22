@@ -2,3 +2,238 @@ a
 b
 
 c
+
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test
+$ git config --global user.name "scb"
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test
+$ git config --global user.email "scb6124@gmail.com"
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test
+$ git config user.name
+scb
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test
+$ git config user.email
+scb6124@gmail.com
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test
+$ git init
+Initialized empty Git repository in D:/scb/git/test/.git/
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git add a.txt
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   a.txt
+
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git commit -m "first commit"
+[master (root-commit) 5ecd8bd] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 a.txt
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git log
+commit 5ecd8bda4fc7f9cf099bb89a87e9138cb26a9064 (HEAD -> master)
+Author: scb <scb6124@gmail.com>
+Date:   Tue Aug 22 10:08:28 2023 +0900
+
+    first commit
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   a.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git commit -m "2nd"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   a.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   a.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git log
+commit 5ecd8bda4fc7f9cf099bb89a87e9138cb26a9064 (HEAD -> master)
+Author: scb <scb6124@gmail.com>
+Date:   Tue Aug 22 10:08:28 2023 +0900
+
+    first commit
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git add a.txt
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   a.txt
+
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git commit -m "2nd"
+[master 6a14dfd] 2nd
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git log
+commit 6a14dfd4f5ff988cad0e34c7c3db2121e62a752c (HEAD -> master)
+Author: scb <scb6124@gmail.com>
+Date:   Tue Aug 22 10:12:20 2023 +0900
+
+    2nd
+
+commit 5ecd8bda4fc7f9cf099bb89a87e9138cb26a9064
+Author: scb <scb6124@gmail.com>
+Date:   Tue Aug 22 10:08:28 2023 +0900
+
+    first commit
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   a.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git add a.txt
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   a.txt
+
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git commit -m "3rd"
+[master 46df909] 3rd
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git log
+commit 46df9097cdf24cde4f10bd11e776856e271c382b (HEAD -> master)
+Author: scb <scb6124@gmail.com>
+Date:   Tue Aug 22 10:13:42 2023 +0900
+
+    3rd
+
+commit 6a14dfd4f5ff988cad0e34c7c3db2121e62a752c
+Author: scb <scb6124@gmail.com>
+Date:   Tue Aug 22 10:12:20 2023 +0900
+
+    2nd
+
+commit 5ecd8bda4fc7f9cf099bb89a87e9138cb26a9064
+Author: scb <scb6124@gmail.com>
+Date:   Tue Aug 22 10:08:28 2023 +0900
+
+    first commit
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git log
+commit 46df9097cdf24cde4f10bd11e776856e271c382b (HEAD -> master)
+Author: scb <scb6124@gmail.com>
+Date:   Tue Aug 22 10:13:42 2023 +0900
+
+    3rd
+
+commit 6a14dfd4f5ff988cad0e34c7c3db2121e62a752c
+Author: scb <scb6124@gmail.com>
+Date:   Tue Aug 22 10:12:20 2023 +0900
+
+    2nd
+
+commit 5ecd8bda4fc7f9cf099bb89a87e9138cb26a9064
+Author: scb <scb6124@gmail.com>
+Date:   Tue Aug 22 10:08:28 2023 +0900
+
+    first commit
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git remote add origin https://github.com/dosolsi/test.git
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git remote
+origin
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git remote -v
+origin  https://github.com/dosolsi/test.git (fetch)
+origin  https://github.com/dosolsi/test.git (push)
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (master)
+$ git branch -M main
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (9/9), 592 bytes | 592.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/dosolsi/test.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (main)
+$ ^C
+
+GGG@DESKTOP-8N3GG4O MINGW64 /d/scb/git/test (main)
+$
